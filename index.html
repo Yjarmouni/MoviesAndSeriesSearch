@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <meta charset="utf-8">
+    <title>Movies Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+
+
+
+
+  </head>
+  <body>
+ 
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><strong>Films search</strong></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">index <span class="sr-only">(current)</span></a></li>
+        <li><a href='mailto:samir.idwy@gmail.com;y.jarmouni@gmail.com;'>Contact us</a></li>
+
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<!--- end navbar -->
+<div class="container">
+
+        <div class="row" id="content" >
+
+      <!--- search bar -->
+
+    <div class="col-lg-12">
+    <form method="post" action="" onsubmit="return search();">
+      <div class="jumbotron">
+         <div class="form-horizontal">
+  <fieldset>
+    <legend>Search any film using only keywords </legend>
+    <div class="form-group">
+      <label for="inputEmail" class="col-lg-2 control-label">The title </label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="inputTitle" placeholder="Title">
+      </div>
+    </div>
+   
+
+    <div class="form-group" >
+      <label class="col-lg-2 control-label">Type</label>
+      <div class="col-lg-10">
+        <div class="radio">
+          <label>
+            <input id="movie" value="movie" type="radio" name="optionsRadios" id="optionsRadios1" value="movie" checked="">
+            Movie
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input id="series" type="radio" name="optionsRadios" id="optionsRadios2" value="series">
+            Series
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+
+        <button type="submit" class="btn btn-primary">Search</button>
+      </div>
+    </div>
+  </fieldset>
+</div></div>
+</form>
+        </div>
+            <!--- end search bar -->
+<!-- Page results -->
+    <div id="res"></div>
+
+          <!-- End Page results -->
+    <!-- Panel example to be cloned -->
+    			<div hidden="">
+		            <div  id="result" class="col-lg-12" style="visibility: hidden;">
+		              <div class="panel panel-primary">
+					  <div class="panel-heading">
+					    <h2 id="title" class="panel-title">Title</h2>	
+
+					  </div>
+        		   <div class="panel-body">
+        		   <div class="col-lg-12">
+        		   <div class="col-lg-2">
+        		   <img id='img' src="http://ia.media-imdb.com/images/M/MV5BMjEwMDg3MDk1NF5BMl5BanBnXkFtZTgwNjYyODA1NTE@._V1_SX300.jpg" class="img-thumbnail"></div>
+        		   <div id='details' class="col-lg-10">
+        		   <div id="year" class="col-lg-4">year</div>
+        		   <div id="Actors" class="col-lg-4">actors</div>
+               		<div id="imdb" class="col-lg-4">imdb</div>
+               		<div id="discription" class="col-lg-12">lorhnbjke ferie he hgiurehueroie,kjfehbk</div></div></div>
+
+
+        		   </div>
+        		  </div>
+        		</div>
+        		</div>
+          <!-- End Panel example to be cloned -->
+
+
+      </div>
+</div>
+
+ <!-- footer -->
+<div id="loader" class="loader" ></div>
+
+      <div id="footer">
+        <p >TjArM!N@ & samir</p>
+      </div>
+ <!-- End footer -->
+
+<script type="text/javascript">$(".loader").fadeOut(500);</script>
+</body>
+
+</html>
